@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   #  When using multiple platforms
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
-
+  s.tvos.deployment_target = "9.0"
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source       = { :git => "https://github.com/kodlian/AlamofireXMLRPC.git", :tag => "1.0.0" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -91,14 +91,14 @@ extension Request {
             }
            
             let xmlResponse = xml[.MethodResponse]
-            guard xmlResponse.name != AEXMLElement.errorElementName else {
+            guard xmlResponse.name != "" else {
                 let failureReason = "Method response could not be found."
                 let error = Error.errorWithCode(.DataSerializationFailed, failureReason: failureReason)
                 return .Failure(error)
             }
             
             let fault = xmlResponse[.Fault]
-            guard fault.name == AEXMLElement.errorElementName else {
+            guard fault.name == "" else {
                 let userInfo = [NSLocalizedFailureReasonErrorKey: fault.value ?? "Error Unknown"]
                 let error = NSError(domain: "com.kodlian.XMLRPC.error", code: 1, userInfo: userInfo)
                 return .Failure(error)
