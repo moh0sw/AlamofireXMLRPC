@@ -97,13 +97,6 @@ extension Request {
                 return .Failure(error)
             }
             
-            let fault = xmlResponse[.Fault]
-            guard fault.name == "" else {
-                let userInfo = [NSLocalizedFailureReasonErrorKey: fault.value ?? "Error Unknown"]
-                let error = NSError(domain: "com.kodlian.XMLRPC.error", code: 1, userInfo: userInfo)
-                return .Failure(error)
-            }
-            
             let params = xml[.MethodResponse][.Parameters]
             if params.rpcNode == .Parameters {
                 return .Success(XMLRPCNode(xml:params))
