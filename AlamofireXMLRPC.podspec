@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.tvos.deployment_target = "9.0"
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :git => "https://github.com/PopcornTimeTV/AlamofireXMLRPC.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/PopcornTimeTV/AlamofireXMLRPC.git", :tag => "1.0.1" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "AlamofireXMLRPC/*.swift"
 
