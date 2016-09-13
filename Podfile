@@ -4,8 +4,8 @@
 use_frameworks!
 
 target 'AlamofireXMLRPC' do
-    pod 'AEXML', :git => "https://github.com/tadija/AEXML.git"
-    pod 'Alamofire', :git => "https://github.com/Alamofire/Alamofire.git"
+    pod 'AEXML', '~> 3.0', :git => "https://github.com/tadija/AEXML.git"
+    pod 'Alamofire', '~> 3.5', :git => "https://github.com/Alamofire/Alamofire.git"
 end
 
 
