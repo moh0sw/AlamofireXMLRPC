@@ -17,7 +17,7 @@ CHECKOUT OPTIONS:
     :commit: e352536e48d6cccd67b0853ce2d7b2772370496a
     :git: https://github.com/tadija/AEXML.git
   Alamofire:
-    :commit: 0ac38d7e312e87aeea608d384e44401f3d8a6b3d
+    :commit: fc95610645577e3dd6b21196f0595a0b6bdb3698
     :git: https://github.com/Alamofire/Alamofire.git
 
 SPEC CHECKSUMS:
